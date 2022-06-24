@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(Assets/Background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* =======================
+        Typography
+======================= */
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.title {
+    color: white;
+    margin: 0;
+}
+
+label {
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+a {
+    color: rgba(4, 40, 61);
+    font-weight: 700;
+}
+
+button {
+    background-color: rgba(4, 40, 61);
+    color: white;
+    font-weight: 700;
+}
+
+.sub {
+    color: skyblue;
+    font-size: .9rem;
+}
+
+.tips {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.terms {
+    width: 60%;
+}
+
+.subheading {
+    text-align: center;
+}
+
+.coloredTitle,
+.tips {
+    color: rgba(4, 40, 61);
+}
+
+/* =======================
+         Layout
+======================= */
+
+main {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ 
+button,
+.userInfo  {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border-radius: 6px;
+    border: 0;
+}
+
+.userInfo {
+    margin: .8em 0;
+    box-shadow: -2px 5px 5px 3px gray;
+}
+
+.userInfo:hover,
+.userInfo:focus {
+    border: none;
+    background-color: rgba(4, 40, 61);
+    color: white;
+}
+
+.mg-info {
+    margin-bottom: 1em;
+}
+
+.boxChecked {
+    display: flex;
+    align-items: baseline;
+}
+
+.check {
+    height: 20px;
+    width: 20px;
+    margin-right: 1em;
+    box-shadow: -2px 5px 5px 3px gray;
+}
+
+.intro {
+    background: rgba(4, 40, 61);
+    text-align: center;
+    padding: 1em;
+    height: 75vh;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    margin-top: 2em;
+}
+
+.user-input {
+    padding: 1em 2.5em;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 75vh;
+}
+
+.loginText {
+    margin-top: 1.1em;
+}
+
+/* =======================
+      Media Query
+======================= */
+@media (min-width: 601px) {
+
+.intro, .user-input {
+    width: 50%;
+}
+
+main {
+    flex-direction: row;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 55%;
+}
+}
+
+@media (max-width: 600px) {
+    .intro,
+    .user-input {
+        border-radius: 0;
+    }
+
+    .terms {
+        width: 80%;
+    }
+}
